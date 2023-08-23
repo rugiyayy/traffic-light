@@ -1,0 +1,94 @@
+
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+.traffic-light{
+    margin: 30px;
+    width: 120px;
+    height: 360px;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+
+}
+
+.light {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.red{
+    background-color: red;
+    animation: for-red 5s infinite linear;
+}
+
+@keyframes for-red {
+    0%{
+        opacity: 1;
+    }
+    39%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 0.2;
+    }
+}
+
+
+.yellow{
+    background-color: yellow;
+    animation: for-yellow 5s infinite linear;
+}
+@keyframes for-yellow{
+    0%{
+        opacity: 0.1;
+    }
+    39%{
+        opacity: 0.1;
+    }
+    40%{
+        opacity: 1;
+    }
+    59%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0.1;
+    }
+
+    100%{
+        opacity: 0.1;
+    }
+}
+
+
+.green{
+    background-color: green;
+    animation: for-green 5s infinite linear;
+}
+@keyframes for-green {
+    0%{
+        opacity: 0.2;
+    }
+    59%{
+        opacity: 0.2;
+    }
+    60%{
+        opacity: 1;
+    }
+    99%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.2;
+    }
+}
